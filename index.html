@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@yopamann" />
+  <meta name="twitter:title" content="Yopaman - Click Speed Test" />
+  <meta name="twitter:description" content="Un testeur de vitesse de clics" />
+  <meta name="twitter:image" content="https://yopaman.fr/clickspeedtest/pointer.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <title>Click Speed Test</title>
+</head>
+<body>
+  <div id="clickzone"></div>
+  <div id="menu" class="z-depth-2">
+    <div id="infos" class="z-depth-1">
+      <i class="material-icons">info</i>
+      <span id="explication">&nbsp;&nbsp;Cliquez sur la zone blanche<br />&nbsp;&nbsp;pour commencer le test</span>
+    </div>
+    <div id="secondesSet">
+      <label for="nbrSecondes" class="white-text">Régler le nombre de secondes :</label><br />
+      <input type="number" id="nbrSecondesSet" value="10"></input>
+    </div>
+    <span>Nombre de clics : <span id="nbrClicks">0</span></span>
+    <div id="allignRight">
+      <a id="reset" class="waves-effect waves-light btn red lighten-1 reset">Reset</a>
+    </div>
+  </div>
+
+  <div id="nbrSecondesDiv"><div id="nbrSecondesText" style="display: none" class="z-depth-2">Secondes restantes :&nbsp;<span id="nbrSecondes"></span></div></div>
+  <div id="overlay" style="display: none">
+    <div id="scorebox" class="z-depth-2">
+      <br /><br /><br />
+      <h2 id="cps"></h2><br />
+      <h4> clics par secondes</h4>
+      <a class="waves-effect waves-light btn red lighten-1 endReset">Reset</a>
+      <a class="twitter-share-button waves-effect waves-light btn blue lighten-2">Tweet</a>
+    </div>
+  </div>
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

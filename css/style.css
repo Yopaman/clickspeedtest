@@ -1,0 +1,108 @@
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#menu {
+  position: fixed;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  left: 0; top: 0;
+  background-color: #00897b;
+  margin: 0;
+  padding: 5px;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+#infos {
+  display: flex;
+  align-items: center;
+  background-color: #757575;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#menu > div, #menu > span {
+  margin: 15px;
+}
+
+#allignRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#secondesSet {
+  text-align: center;
+  padding: 5px;
+}
+
+#nbrSecondes, #nbrClicks {
+  font-size: 1.3em;
+}
+
+#nbrSecondesDiv {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%; height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#nbrSecondesText {
+  display: flex;
+  align-items: center;
+  background-color: #00897b;
+  padding: 10px;
+  border-radius: 20px;
+  height: 80%;
+  color: white;
+}
+
+#clickzone {
+  position: absolute;
+  width: 100%; height: 100%;
+  text-align: center;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%; height: 100%;
+  background-color: rgba(201, 201, 201, 0.70);
+}
+
+#scorebox {
+  width: 30%;
+  height: 70%;
+  background-color: white;
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+  margin-left: auto; margin-right: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.endReset {
+  position: absolute;
+  bottom: 0;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.twitter-share-button {
+  position: absolute;
+  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
